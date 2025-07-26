@@ -8,7 +8,7 @@ def ping(host):
     return subprocess.call(command, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) == 0
 
 # Create the network
-network = ipaddress.ip_network('172.17.0.0/24', strict=False)
+network = ipaddress.ip_network('172.19.0.0/24', strict=False)
 
 # Iterate through all hosts in the network
 for ip in network.hosts():
